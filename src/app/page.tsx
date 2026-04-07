@@ -1,91 +1,89 @@
-import CalculadoraHome from "../components/calculadora-home";
-
 export default function Home() {
   const areas = [
-    'Aposentadoria por idade',
-    'Aposentadoria por tempo de contribuição',
-    'Auxílio-doença',
-    'Aposentadoria por invalidez',
-    'BPC/LOAS',
-    'Revisão de benefício',
-  ]
+    "Aposentadoria por idade",
+    "Aposentadoria por tempo de contribuição",
+    "Auxílio-doença",
+    "Aposentadoria por invalidez",
+    "BPC/LOAS",
+    "Revisão de benefício",
+  ];
 
   const passos = [
     {
-      numero: '01',
-      titulo: 'Contato inicial',
+      numero: "01",
+      titulo: "Contato inicial",
       descricao:
-        'Você fala direto com o escritório pelo WhatsApp e explica sua situação com rapidez e clareza.',
+        "Você fala direto com o escritório pelo WhatsApp e explica sua situação com rapidez e clareza.",
     },
     {
-      numero: '02',
-      titulo: 'Análise do caso',
+      numero: "02",
+      titulo: "Análise do caso",
       descricao:
-        'Avaliamos documentos, histórico contributivo e o melhor caminho para buscar seu direito.',
+        "Avaliamos documentos, histórico contributivo e o melhor caminho para buscar seu direito.",
     },
     {
-      numero: '03',
-      titulo: 'Estratégia jurídica',
+      numero: "03",
+      titulo: "Estratégia jurídica",
       descricao:
-        'Definimos a solução mais segura, seja administrativa ou judicial, de acordo com seu caso.',
+        "Definimos a solução mais segura, seja administrativa ou judicial, de acordo com seu caso.",
     },
     {
-      numero: '04',
-      titulo: 'Acompanhamento',
+      numero: "04",
+      titulo: "Acompanhamento",
       descricao:
-        'Você recebe orientação clara em cada etapa, com atendimento próximo e objetivo.',
+        "Você recebe orientação clara em cada etapa, com atendimento próximo e objetivo.",
     },
-  ]
+  ];
 
   const diferenciais = [
-    'Atendimento direto com advogado',
-    'Atuação focada em Direito Previdenciário',
-    'Análise técnica e individual do caso',
-    'Clareza em cada etapa do processo',
-    'Atendimento online para todo o Brasil',
-    'Resposta rápida pelo WhatsApp',
-  ]
+    "Atendimento direto com advogado",
+    "Atuação focada em Direito Previdenciário",
+    "Análise técnica e individual do caso",
+    "Clareza em cada etapa do processo",
+    "Atendimento online para todo o Brasil",
+    "Resposta rápida pelo WhatsApp",
+  ];
 
   const depoimentos = [
     {
-      nome: 'Cliente atendida em revisão de benefício',
+      nome: "Cliente atendida em revisão de benefício",
       texto:
-        'Fui orientada com clareza desde o início. O atendimento foi rápido, objetivo e me senti segura durante todo o processo.',
+        "Fui orientada com clareza desde o início. O atendimento foi rápido, objetivo e me senti segura durante todo o processo.",
     },
     {
-      nome: 'Cliente atendido em benefício por incapacidade',
+      nome: "Cliente atendido em benefício por incapacidade",
       texto:
-        'Meu benefício havia sido negado e eu não sabia o que fazer. Recebi uma análise cuidadosa e consegui seguir o caminho certo.',
+        "Meu benefício havia sido negado e eu não sabia o que fazer. Recebi uma análise cuidadosa e consegui seguir o caminho certo.",
     },
     {
-      nome: 'Cliente atendida em aposentadoria',
+      nome: "Cliente atendida em aposentadoria",
       texto:
-        'Gostei muito da forma como explicaram cada etapa. Tudo foi tratado com profissionalismo e atenção.',
+        "Gostei muito da forma como explicaram cada etapa. Tudo foi tratado com profissionalismo e atenção.",
     },
-  ]
+  ];
 
   const faq = [
     {
-      pergunta: 'INSS negou meu benefício. O que posso fazer?',
+      pergunta: "INSS negou meu benefício. O que posso fazer?",
       resposta:
-        'Dependendo do caso, é possível recorrer administrativamente ou buscar a via judicial. O primeiro passo é analisar a documentação e entender o motivo da negativa.',
+        "Dependendo do caso, é possível recorrer administrativamente ou buscar a via judicial. O primeiro passo é analisar a documentação e entender o motivo da negativa.",
     },
     {
-      pergunta: 'O atendimento precisa ser presencial?',
+      pergunta: "O atendimento precisa ser presencial?",
       resposta:
-        'Não. O atendimento pode ser realizado online, com envio de documentos e acompanhamento à distância em todo o Brasil.',
+        "Não. O atendimento pode ser realizado online, com envio de documentos e acompanhamento à distância em todo o Brasil.",
     },
     {
-      pergunta: 'Quanto tempo demora para resolver?',
+      pergunta: "Quanto tempo demora para resolver?",
       resposta:
-        'O prazo varia conforme o tipo de benefício, a documentação e o caminho adotado. Na análise inicial, você recebe uma estimativa mais realista para o seu caso.',
+        "O prazo varia conforme o tipo de benefício, a documentação e o caminho adotado. Na análise inicial, você recebe uma estimativa mais realista para o seu caso.",
     },
     {
-      pergunta: 'Como funciona a análise inicial?',
+      pergunta: "Como funciona a análise inicial?",
       resposta:
-        'Você envia informações básicas sobre o seu histórico e a documentação disponível. A partir disso, o escritório avalia a viabilidade e os próximos passos.',
+        "Você envia informações básicas sobre o seu histórico e a documentação disponível. A partir disso, o escritório avalia a viabilidade e os próximos passos.",
     },
-  ]
+  ];
 
   return (
     <div className="min-h-screen bg-stone-50 text-slate-900 selection:bg-amber-200">
@@ -101,9 +99,6 @@ export default function Home() {
           </div>
 
           <nav className="hidden gap-7 text-sm text-slate-600 md:flex">
-            <a href="#simulador" className="hover:text-slate-900">
-              Simulação
-            </a>
             <a href="#areas" className="hover:text-slate-900">
               Áreas
             </a>
@@ -120,6 +115,7 @@ export default function Home() {
       <main>
         <section className="relative overflow-hidden bg-slate-950 text-white">
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(201,165,92,0.20),transparent_35%),radial-gradient(circle_at_bottom_right,rgba(255,255,255,0.08),transparent_25%)]" />
+
           <div className="relative mx-auto grid max-w-7xl gap-10 px-6 py-20 lg:grid-cols-[1.05fr_0.95fr] lg:px-8 lg:py-24">
             <div className="max-w-2xl">
               <div className="mb-5 inline-flex rounded-full border border-white/15 bg-white/5 px-4 py-2 text-xs font-medium text-stone-200">
@@ -137,7 +133,7 @@ export default function Home() {
 
               <div className="mt-8 flex flex-col gap-4 sm:flex-row">
                 <a
-                  href="https://wa.me/5519982498548?text=Olá,%20vim%20do%20site%20e%20quero%20ajuda%20com%20meu%20benefício%20do%20INSS."
+                  href="https://wa.me/5519982488549?text=Ol%C3%A1%2C%20vim%20do%20site%20e%20quero%20ajuda%20com%20meu%20benef%C3%ADcio%20do%20INSS."
                   target="_blank"
                   rel="noreferrer"
                   className="rounded-full bg-amber-500 px-6 py-4 text-center text-sm font-semibold text-slate-950 transition hover:bg-amber-400"
@@ -146,20 +142,20 @@ export default function Home() {
                 </a>
 
                 <a
-  href="/calculadora"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="rounded-full border border-white/20 px-6 py-4 text-center text-sm font-semibold text-white transition hover:bg-white/10"
->
-  Fazer simulação gratuita
-</a>
+                  href="/calculadora"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="rounded-full border border-white/20 px-6 py-4 text-center text-sm font-semibold text-white transition hover:bg-white/10"
+                >
+                  Fazer simulação gratuita
+                </a>
               </div>
 
               <div className="mt-10 grid gap-4 sm:grid-cols-3">
                 {[
-                  'Especialista em Direito Previdenciário',
-                  'Atendimento rápido e organizado',
-                  'Análise individual de cada caso',
+                  "Especialista em Direito Previdenciário",
+                  "Atendimento rápido e organizado",
+                  "Análise individual de cada caso",
                 ].map((item) => (
                   <div
                     key={item}
@@ -170,8 +166,6 @@ export default function Home() {
                 ))}
               </div>
             </div>
-
-            
           </div>
         </section>
 
@@ -374,7 +368,7 @@ export default function Home() {
 
             <div className="mt-8 flex justify-center">
               <a
-                href="https://wa.me/5519982488549?text="Olá,%20vim%20do%20site%20e%20quero%20ajuda%20com%20meu%20benefício%20do%20INSS."
+                href="https://wa.me/5519982488549?text=Ol%C3%A1%2C%20vim%20do%20site%20e%20quero%20ajuda%20com%20meu%20benef%C3%ADcio%20do%20INSS."
                 target="_blank"
                 rel="noreferrer"
                 className="rounded-full bg-white px-7 py-4 text-sm font-semibold text-slate-950 transition hover:bg-stone-100"
@@ -386,5 +380,5 @@ export default function Home() {
         </section>
       </main>
     </div>
-  )
+  );
 }
