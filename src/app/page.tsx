@@ -1,4 +1,4 @@
-import { CalculadoraHome } from '../components/calculadora-home'
+import CalculadoraHome from "../components/calculadora-home";
 
 export default function Home() {
   const areas = [
@@ -374,7 +374,7 @@ export default function Home() {
 
             <div className="mt-8 flex justify-center">
               <a
-                href="https://wa.me/5519982498548?text=Olá,%20vim%20do%20site%20e%20quero%20ajuda%20com%20meu%20benefício%20do%20INSS."
+                href="https://wa.me/5519982488549?text=..."Olá,%20vim%20do%20site%20e%20quero%20ajuda%20com%20meu%20benefício%20do%20INSS."
                 target="_blank"
                 rel="noreferrer"
                 className="rounded-full bg-white px-7 py-4 text-sm font-semibold text-slate-950 transition hover:bg-stone-100"
